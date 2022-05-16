@@ -65,12 +65,15 @@ public class Stats{
     private int rollingPins =0;
     private int ultimateRollingPins = 0;
     private int autoRoller =0;
-    private int score =0;
+    private int score =100000;
 
     public void increaseScore(){
         score+= grandmas+ultimateRollingPins*grandmas;
         score+= greatGrandmas*200+ultimateRollingPins*grandmas;
 
+    }
+    public void increaseGrandma(){
+        grandmas += moms;
     }
     
 }
